@@ -1,8 +1,7 @@
 name: web_auth
 description: Flutter web auth package.
-version: 0.0.1
-author:
-homepage:
+version: 1.0.0
+homepage: https://github.com/nhancv/flutter_web_auth
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -11,6 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  logger: ^0.9.4
+  webview_flutter: ^1.0.7
 
 dev_dependencies:
   flutter_test:
