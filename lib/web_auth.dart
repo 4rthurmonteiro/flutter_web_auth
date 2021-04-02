@@ -20,9 +20,9 @@ class WebAuth extends StatefulWidget {
   final double progressBarHeight;
 
   static Future<String> open(
-      BuildContext context, String authorizationUrl, String redirectUri) {
+      BuildContext context, String authorizationUrl, String redirectUri, String userAgent) {
     return Navigator.of(context).push<String>(MaterialPageRoute<String>(
-        builder: (_) => WebAuth(authorizationUrl, redirectUri)));
+        builder: (_) => WebAuth(authorizationUrl, redirectUri, userAgent: userAgent)));
   }
 
   @override
